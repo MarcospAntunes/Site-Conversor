@@ -4,11 +4,20 @@ const peso = document.querySelector("#peso");
 const moeda = document.querySelector("#moeda");
 const comprimento = document.querySelector("#comprimento");
 const popup = document.querySelector('.popup-wrapper');
+const botaoCalculadora = document.querySelector('#Calculadora')
+const botaoPeso = document.querySelector('#peso')
+const botaoMoeda = document.querySelector('#moeda')
+const botaoComprimento = document.querySelector('#comprimento')
 
 
 //Abre o Popup da calculadora 
 calculadora.addEventListener("click", () => {
     popup.style.display = 'block';
+    botaoCalculadora.style.display = 'none';
+    botaoPeso.style.display = 'none';
+    botaoMoeda.style.display = 'none';
+    botaoComprimento.style.display = 'none';
+
 })
 
 popup.addEventListener('click', event => {
@@ -17,7 +26,11 @@ popup.addEventListener('click', event => {
     const shouldClosePopup = classNames.some(classNames => classNames === classNameOfClickedElement)
     
     if(shouldClosePopup) {
-        popup.style.display = 'none'
+        popup.style.display = 'none';
+        botaoCalculadora.style.display = 'block';
+        botaoPeso.style.display = 'block';
+        botaoMoeda.style.display = 'block';
+        botaoComprimento.style.display = 'block';
     }
 }); //
 

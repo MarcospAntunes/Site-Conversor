@@ -90,10 +90,10 @@ body {
     margin: -80px 55px;
 }
 
-.botao #comprimento {
+.botao #imgComprimento {
     position: absolute;
     width: 70px;
-    margin: -80px 18px;
+    margin: -80px 25px;
 }
 
     /*  Estilo do PopUp da Calculadora */
@@ -112,7 +112,7 @@ body {
     text-align: center;
     width: 100%;
     max-width: 300px;
-    margin: 10%;
+    margin: 10% auto;
     padding: 20px;
     background: white;
     position: relative;

@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
+
+/* Estilo Geral das Páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 300px;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-size: 48px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    font-weight: bolder;
+
+}
+
+/* Estilo do corpo da página */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("../imagens/fundo.jpg") no-repeat;
+}
+
+
+/* Estilos da Página Inicial, do menu e dos botões */
+#menu {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #05314baf, #847fa5a6);
+}
+
+#OrganizacaoBotoes > div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+}
+
+.botao {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: linear-gradient(to right, #340b507e, #0b265777);
+}
+
+.botao #imgCalculadora {
+    position: absolute;
+    width: 70px;
+    margin: -80px 15px;
+}
+
+.botao #imgPeso {
+    position: absolute;
+    width: 70px;
+    margin: -80px 45px;
+}
+
+.botao #imgMoeda {
+    position: absolute;
+    width: 70px;
+    margin: -80px 55px;
+}
+
+.botao #comprimento {
+    position: absolute;
+    width: 70px;
+    margin: -80px 18px;
+}
+
+    /*  Estilo do PopUp da Calculadora */
+.popup-wrapper {
+    display: none;
+    background-color: rgb(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10%;
+    padding: 20px;
+    background: white;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+    /* Estilo da calculadora */ 
+.calculadora {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+#resultado {
+    background-color: white;
+    color: black;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: right;
+    
+}
+
+.CalcBotao {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.CalcBotao:hover {
+    background-color: black;
+}
+
+/* Rodape */ 
+
+footer {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 12px;
+    padding-top: 50px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 10vh;
+}
+
+.social {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.social:hover {
+    background: linear-gradient(to right, #BF6DD9, #0b265777);
+}
+
+.social > img {
+    width: 70px;
+}
+
+/* Estilos da Página do Conversor de Peso */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav a {
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    padding: 20px;
+    transition: 0.3s;
+    background-color: rgba(211, 211, 211, 0.219);
+}
+
+#Conversor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    font-size: 18px;
+    width: 850px;
+    
+}
+
+#conversor, input, select, .opcao {
+    background: linear-gradient(to right, white, #294282, #5A3471);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+#converter {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 15px;
+    padding: 15px 100px 15px 100px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+#converter:hover {
+    padding: 20px 105px 20px 105px;
+    transition: 0.3s;
+    background-color: rgba(211, 211, 211, 0.219);
+}

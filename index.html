@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Converter</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/mobile.css">
+</head>
+<body>
+    <header>
+        <h1>Fast Converter</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <div id="OrganizacaoBotoes">
+                <div>
+                    <button class="botao" id="Calculadora"><img src="imagens/icones/calculadoraicon.png" alt="Calculadora" id="imgCalculadora">Calculadora</button>
+
+                    <div class="popup-wrapper">
+                        <div class="popup">
+                            <div class="popup-close">x</div>
+
+                            <div class="popup-content">
+                                <div class="calculadora">
+                                    <p id="resultado"></p>
+                                    <table>
+                                        <tr>
+                                            <td><button class="CalcBotao" onclick="clean()">C</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('%')">%</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('/')">/</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('*')">x</button></td>
+                                        </tr>
+                                        <tr>
+                                        <tr>
+                                            <td><button class="CalcBotao" onclick="insert('7')">7</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('8')">8</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('9')">9</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('-')">-</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button class="CalcBotao" onclick="insert('4')">4</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('5')">5</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('6')">6</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('+')">+</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button class="CalcBotao" onclick="insert('1')">1</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('2')">2</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('3')">3</button></td>
+                                            <td rowspan="2"><button class="CalcBotao" style="height: 106px;" onclick="calculate()">=</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button class="CalcBotao" onclick="insert('0')">0</button></td>
+                                            <td><button class="CalcBotao" onclick="insert('.')">.</button></td>
+                                            <td><button class="CalcBotao" onclick="back()">⌫</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="botao" id="peso"><img src="imagens/icones/pesoicon.png" alt="Peso" id="imgPeso">Conversor de Peso</button>
+                </div>
+
+                <div>
+                    <button class="botao" id="moeda"><img src="imagens/icones/convertermoedaicon.png" alt="Moeda" id="imgMoeda">Conversor de Moedas</button>
+                    
+                    <button class="botao"><img src="imagens/icones/fitametricaicon.png" alt="Medida" id="comprimento">Conversor de Comprimento</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <button class="social" id="linkedin"><img src="imagens/icones/linkedinicon.png" alt="LinkEdin"></button>
+            <button class="social"><img src="imagens/icones/githubicon.png" alt="GitHub" id="github"></button>
+            
+        </div>
+        <h2>by Marcos Antunes</h2>
+        
+    </footer>
+
+    <script src="script/main.js"></script>
+    <script src="script/calculadora.js"></script>
+</body>
+</html>

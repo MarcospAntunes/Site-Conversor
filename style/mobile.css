@@ -130,6 +130,7 @@
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         box-sizing: border-box;
+        visibility: hidden;
         
     }
     .nav-list a {
@@ -139,6 +140,7 @@
 
     .nav-list.active {
         transform: translateX(0);
+        visibility: visible;
     }
 
     @keyframes navLinkFade {

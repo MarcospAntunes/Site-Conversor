@@ -261,6 +261,7 @@ nav a:hover {
     text-align: center;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #converter:hover {

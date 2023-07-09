@@ -42,3 +42,8 @@ class MobileNavbar {
     ".nav-list a",
   );
   mobileNavbar.init();
+
+  function setTopo(){
+    $(window).scrollTop(0);
+}
+$(window).bind('scroll', setTopo);

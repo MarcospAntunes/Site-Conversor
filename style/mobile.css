@@ -7,6 +7,7 @@
         overflow: hidden!important;
     }
     body {
+        box-sizing: border-box;
         background: linear-gradient(to right, rgb(29, 28, 72), rgb(1, 20, 62));
         overflow: hidden!important;
     }

@@ -4,11 +4,11 @@
 
     /* Estilo do corpo da página */
     html {
-        overflow: hidden;
+        overflow: hidden!important;
     }
     body {
         background: linear-gradient(to right, rgb(29, 28, 72), rgb(1, 20, 62));
-        overflow: hidden;
+        overflow: hidden!important;
     }
     /* Estilo do Cabeçalho */
     header {

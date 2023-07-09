@@ -23,12 +23,13 @@
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 2px;
         font-weight: bolder;
+        text-align: center;
     
     }
     /* Estilos da Página Inicial, do menu e dos botões */
     #menu {
         width: 70vw;
-        height: 55vh;
+        height: 50vh;
     }
 
     #OrganizacaoBotoes > div {
@@ -37,6 +38,7 @@
         width: 150px;
         height: 155px;
         padding-right: 40px;
+        margin: auto;
     }
 
     .botao {
@@ -51,7 +53,6 @@
         color: white;
         font-size: 12px;
         cursor: pointer;
-        text-align: center;
     }
 
     .botao #imgCalculadora {

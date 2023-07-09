@@ -203,3 +203,87 @@
     border: 1px solid rgba(163, 68, 163, 0.808);
     } 
 }
+
+@media screen and (max-width: 1024px) {
+    #menu {
+        width: 30vw;
+        height: 45vh;
+        margin: -30px auto;
+    }
+
+    #OrganizacaoBotoes > div {
+        width: 160px;
+        height: 160px;
+        padding-right: 40px;
+    }
+
+    .botao {
+        display: block;
+        width: 65px;
+        height: 75px;
+        padding: 50px 30px 10px 20px;
+        font-size: 12px;
+    }
+
+    .botao #imgCalculadora {
+        width: 70px;
+        margin: -70px 2px;
+    }
+    
+    .botao #imgPeso {
+        width: 70px;
+        margin: -70px -2px;
+    }
+    
+    .botao #imgMoeda {
+        width: 55px;
+        margin: -60px 5px;
+    }
+    
+    .botao #imgComprimento {
+        width: 70px;
+        margin: -65px 2px;
+    }
+
+        /*  Estilo do PopUp da Calculadora */
+
+    .popup {
+    width: 80%;
+    }
+
+    /* Estilo da calculadora */ 
+    .calculadora {
+    padding: 10px;
+    }
+
+    #resultado {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;   
+    }
+
+    .CalcBotao {
+    margin: 1px;
+    font-size: 16px;
+    }
+
+/* Rodape */ 
+
+    footer {
+        font-size: 10px;  
+    }
+
+    footer > div {
+        height: 5vh;
+    }
+    
+    .social {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .social > img {
+        width: 50px;
+    }
+
+}

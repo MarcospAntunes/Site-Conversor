@@ -1,51 +1,44 @@
-//Navegação dos botões do menu da página principal
-const calculadora = document.querySelector("#Calculadora");
-const peso = document.querySelector("#peso");
-const moeda = document.querySelector("#moeda");
-const comprimento = document.querySelector("#comprimento");
 const popup = document.querySelector('.popup-wrapper');
-const botaoCalculadora = document.querySelector('#Calculadora')
-const botaoPeso = document.querySelector('#peso')
-const botaoMoeda = document.querySelector('#moeda')
-const botaoComprimento = document.querySelector('#comprimento')
+const botao = document.querySelectorAll('.botao')
 
 
 //Abre o Popup da calculadora 
-calculadora.addEventListener("click", () => {
+const openPopup = () => {
     popup.style.display = 'block';
-    botaoCalculadora.style.display = 'none';
-    botaoPeso.style.display = 'none';
-    botaoMoeda.style.display = 'none';
-    botaoComprimento.style.display = 'none';
+    botao.forEach(button => button.style.display = 'none');
+  };
 
-})
+  
+// Fecha o Popup da calculadora
+const closePopup = () => {
+    popup.style.display = 'none';
+    botao.forEach(button => button.style.display = 'block');
+  };
 
-popup.addEventListener('click', event => {
+  popup.addEventListener('click', event => {
     const classNameOfClickedElement = event.target.classList[0];
-    const classNames = ['popup-close', 'popup-wrapper']
-    const shouldClosePopup = classNames.some(classNames => classNames === classNameOfClickedElement)
+    const classNames = ['popup-close', 'popup-wrapper'];
+    const shouldClosePopup = classNames.includes(classNameOfClickedElement);
     
-    if(shouldClosePopup) {
-        popup.style.display = 'none';
-        botaoCalculadora.style.display = 'block';
-        botaoPeso.style.display = 'block';
-        botaoMoeda.style.display = 'block';
-        botaoComprimento.style.display = 'block';
+    if (shouldClosePopup) {
+      closePopup();
     }
-}); //
+  });
 
-peso.addEventListener("click", () => {
-    window.location.href = "html/peso.html";
+//Navegação dos botões do menu da página principal
+botao.forEach(button => {
+  button.addEventListener('click', () => {
+    if (button.id === 'Calculadora') {
+      openPopup();
+    } else if (button.id === 'peso') {
+      window.location.href = "html/peso.html";
+    } else if (button.id === 'moeda') {
+      window.location.href = "html/moeda.html";
+    } else if (button.id === 'comprimento') {
+      window.location.href = "html/comprimento.html";
+    }
+  });
 });
-
-moeda.addEventListener("click", () => {
-    window.location.href = "html/moeda.html";
-});
-
-comprimento.addEventListener("click", () => {
-    window.location.href = "html/comprimento.html";
-});
-
 
 // Navegação do rodapé da página principal
 const linkedin = document.querySelector("#linkedin");

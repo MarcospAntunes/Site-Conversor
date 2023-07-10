@@ -126,6 +126,17 @@ body {
     cursor: pointer;
 }
 
+#resultadoCalc {
+    background-color: white;
+    width: 215px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: Calculator, monospace;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
     /* Estilo da calculadora */ 
 .calculadora {
     background-color: rgba(0, 0, 0, 0.8);

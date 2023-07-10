@@ -1,4 +1,4 @@
-var resultadoElement = document.querySelector('#resultado');
+var resultadoElement = document.querySelector('#resultadoCalc');
 
 function insert(num) {
     var numero = resultadoElement.innerHTML;

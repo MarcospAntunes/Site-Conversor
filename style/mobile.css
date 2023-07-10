@@ -3,14 +3,10 @@
 @media screen and (max-width: 500px) {
 
     /* Estilo do corpo da página */
-    html {
-        overflow: hidden!important;
-        
-    }
     body {
         background: linear-gradient(to right, rgb(29, 28, 72), rgb(1, 20, 62));
-        overflow: hidden!important;
         width: 100vw;
+        overflow: hidden;
     }
     /* Estilo do Cabeçalho */
     header {
@@ -91,7 +87,7 @@
     }
 
     footer > div {
-        height: 5vh;
+        height: 10vh;
     }
     
     .social {

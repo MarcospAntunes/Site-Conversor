@@ -189,6 +189,12 @@
         width: 220px;
     }
 
+    #resultado {
+        width: 150px;
+        height: 15px;
+        font-size: 14px;   
+        }
+
     #converter {
         width: 200px;
         margin: 20px auto;

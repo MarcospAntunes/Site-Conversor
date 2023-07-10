@@ -134,18 +134,6 @@ body {
 
 }
 
-#resultado {
-    background-color: white;
-    color: black;
-    width: 207px;
-    height: 30px;
-    margin: 5px;
-    padding: 5px;
-    font-size: 25px;
-    text-align: right;
-    
-}
-
 .CalcBotao {
     background-color: rgb(31, 31, 31);
     color: white;
@@ -250,6 +238,20 @@ nav a:hover {
     padding: 5px;
     border-radius: 5px;
     width: 400px;
+}
+
+#resultado {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    width: 307px;
+    height: 25px;
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
 }
 
 #converter {

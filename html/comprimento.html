@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/mobile.css">
+    <title>Fast Converter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-list">
+                <a href="../index.html">Home</a>
+                <a href="peso.html">Conversor de Peso</a>
+                <a href="moeda.html">Conversor de Moedas</a>
+                <a href="#">Conversor de Medidas de Comprimento</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Conversor">
+            <label for="numero">Número a ser convertido:</label>
+            <input type="number" name="numero" id="numero">
+            <label for="Decomprimento">Dê:</label>
+            <select name="Decomprimento" id="Decomprimento">
+                <option value="">Escolha a unidade de Comprimento original</option>
+                <option value="quilometro" class="opcao">Quilometro(km)</option>
+                <option value="hectometro" class="opcao">hectometro(hm)</option>
+                <option value="decametro" class="opcao">Decametro(dam)</option>
+                <option value="metro" class="opcao">metro(m)</option>
+                <option value="decimetro" class="opcao">Decimetro(dm)</option>
+                <option value="centimetro" class="opcao">Centimetro(cm)</option>
+                <option value="milimetro" class="opcao">Milimetro(mm)</option>
+            </select>
+
+            <label for="Paracomprimento">Para:</label>
+            <select name="Paracomprimento" id="Paracomprimento">
+                <option value="">Escolha a unidade de comprimento desejado</option>
+                <option value="quilometro" class="opcao">Quilometro(km)</option>
+                <option value="hectometro" class="opcao">hectometro(hm)</option>
+                <option value="decametro" class="opcao">Decametro(dam)</option>
+                <option value="metro" class="opcao">metro(m)</option>
+                <option value="decimetro" class="opcao">Decimetro(dm)</option>
+                <option value="centimetro" class="opcao">Centimetro(cm)</option>
+                <option value="milimetro" class="opcao">Milimetro(mm)</option>
+            </select>
+            <div class="resultado" id="resultado"></div>
+            <button id="converter">Converter</button>
+        </section>
+        <article></article>
+    </main>
+
+    <footer>
+        <div>
+            <button class="social" id="linkedin"><img src="../imagens/icones/linkedinicon.png" alt="LinkEdin"></button>
+            <button class="social"><img src="../imagens/icones/githubicon.png" alt="GitHub" id="github"></button>
+        </div>
+        <h2>by Marcos Antunes</h2>
+    </footer>
+    <script src="../script/mobile-navbar.js"></script>
+    <script src="../script/ConversorDeCompEPeso.js"></script>
+</body>
+</html>

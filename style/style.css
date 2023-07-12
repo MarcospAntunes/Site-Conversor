@@ -41,8 +41,8 @@ body {
 #menu {
     display: block;
     margin: auto;
-    width: 600px;
-    height: 320px;
+    max-width: 600px;
+    max-height: 320px;
     border-radius: 20px;
     padding: 20px;
     background: linear-gradient(to right, #05314baf, #847fa5a6);

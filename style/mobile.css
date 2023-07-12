@@ -6,7 +6,7 @@
     body {
         background: linear-gradient(to right, rgb(29, 28, 72), rgb(1, 20, 62));
         width: 100vw;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     /* Estilo do Cabeçalho */
     header {
@@ -20,18 +20,17 @@
     }
     /* Estilos da Página Inicial, do menu e dos botões */
     #menu {
-        width: 70vw;
+        width: 90vw;
         height: 50vh;
     }
 
     #OrganizacaoBotoes > div {
-        width: 150px;
+        width: 100%;
         height: 155px;
-        padding-right: 140px;
+        padding-right: 500px;
     }
 
     .botao {
-        display: block;
         width: 50px;
         height: 50px;
         padding: 50px 30px 10px 20px;
@@ -133,7 +132,7 @@
         right: 0;
         left: 45px;
         width: 80vw;
-        height: 88vh;
+        height: 87.7vh;
         background-color: rgba(0, 0, 0, 0.856);
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
@@ -216,6 +215,19 @@
     padding: 10px;
     border: 1px solid rgba(163, 68, 163, 0.808);
     } 
+
+    .artigo {
+        padding-top: 25px;
+        color: white;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .artigo > h3 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 3em;
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 1200px) {

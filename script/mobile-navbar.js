@@ -22,6 +22,18 @@ class MobileNavbar {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
+
+
+      const Decomprimento = document.querySelector('#Decomprimento');
+      const Paracomprimento = document.querySelector('#Paracomprimento');
+      const unidadeOrigem = Decomprimento.value;
+      const unidadeDestino = Paracomprimento.value;
+      const curiosidadePeso = document.querySelector('#curiosidadePeso');
+      const curiosidadeComp = document.querySelector('#curiosidadeComp');
+
+
+      if (unidadeDestino === 'quilometro' || unidadeDestino === 'hectometro' || unidadeDestino === 'decametro' || unidadeDestino === 'metro' || unidadeDestino === 'decimetro' || unidadeDestino === 'centimetro' || unidadeDestino === 'milimetro') { curiosidadeComp.innerHTML = '' } 
+      else if (unidadeDestino === 'quilograma' || unidadeDestino === 'hectograma' || unidadeDestino === 'decagrama' || unidadeDestino === 'grama' || unidadeDestino === 'decigrama' || unidadeDestino === 'centigrama' || unidadeDestino === 'miligrama') {  curiosidadePeso.innerHTML = '' }
     }
   
     addClickEvent() {

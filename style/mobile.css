@@ -276,10 +276,16 @@
         margin: -65px 2px;
     }
 
+    #audio {
+        padding-left: 30px;
+    }
+
     #audio > svg {
         width: 45px;
         margin: -55px 5px;
     }
+
+    
 
         /*  Estilo do PopUp da Calculadora */
 

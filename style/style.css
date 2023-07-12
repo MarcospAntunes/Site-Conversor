@@ -41,11 +41,13 @@ body {
 #menu {
     display: block;
     margin: auto;
-    max-width: 600px;
-    max-height: 320px;
+    max-width: 400px;
+    max-height: 350px;
     border-radius: 20px;
-    padding: 20px;
+    box-sizing: border-box;
+    padding: 15px;
     background: linear-gradient(to right, #05314baf, #847fa5a6);
+    padding-left: 0;
 }
 
 #OrganizacaoBotoes > div {
@@ -54,7 +56,7 @@ body {
     margin: auto;
     max-width: 400px;
     max-height: 160px;
-    text-align: center; 
+    text-align: center;
 }
 
 .botao {

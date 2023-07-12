@@ -41,7 +41,7 @@ body {
 #menu {
     display: block;
     margin: auto;
-    width: 400px;
+    width: 600px;
     height: 320px;
     border-radius: 20px;
     padding: 20px;
@@ -54,6 +54,7 @@ body {
     margin: auto;
     width: 400px;
     height: 160px;
+    text-align: center; 
 }
 
 .botao {
@@ -82,19 +83,37 @@ body {
 .botao #imgPeso {
     position: absolute;
     width: 70px;
-    margin: -80px 35px;
+    margin: -70px 2px;
+}
+
+#documentos > svg {
+    position: absolute;
+    fill: white;
+    width: 50px;
+    margin: -60px 10px;
+}
+
+.svgpath {
+    fill: transparent;
 }
 
 .botao #imgMoeda {
     position: absolute;
     width: 50px;
-    margin: -60px 25px;
+    margin: -60px 15px;
 }
 
 .botao #imgComprimento {
     position: absolute;
     width: 70px;
     margin: -70px 15px;
+}
+
+#audio > svg { 
+    position: absolute;
+    fill: white;
+    width: 50px;
+    margin: -60px 10px;
 }
 
     /*  Estilo do PopUp da Calculadora */
@@ -282,5 +301,3 @@ nav a:hover {
     transition: 0.3s;
     background-color: rgba(211, 211, 211, 0.219);
 }
-
-

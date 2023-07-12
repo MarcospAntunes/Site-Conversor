@@ -27,7 +27,7 @@
     #OrganizacaoBotoes > div {
         width: 150px;
         height: 155px;
-        padding-right: 40px;
+        padding-right: 140px;
     }
 
     .botao {
@@ -47,6 +47,11 @@
         width: 60px;
         margin: -60px -2px;
     }
+
+    #documentos > svg {
+        width: 50px;
+        margin: -55px 5px;
+    }
     
     .botao #imgMoeda {
         width: 45px;
@@ -56,6 +61,11 @@
     .botao #imgComprimento {
         width: 60px;
         margin: -55px 2px;
+    }
+
+    #audio > svg {
+        width: 45px;
+        margin: -55px 5px;
     }
 
         /*  Estilo do PopUp da Calculadora */
@@ -208,9 +218,9 @@
     } 
 }
 
-@media screen and (min-width: 501px) and (max-width: 1024px) {
+@media screen and (min-width: 501px) and (max-width: 1200px) {
     #menu {
-        width: 30vw;
+        width: 40vw;
         height: 45vh;
         margin: -30px auto;
     }
@@ -218,7 +228,7 @@
     #OrganizacaoBotoes > div {
         width: 160px;
         height: 160px;
-        padding-right: 40px;
+        padding-right: 150px;
     }
 
     .botao {
@@ -238,6 +248,11 @@
         width: 70px;
         margin: -70px -2px;
     }
+
+    #documentos > svg {
+        width: 50px;
+        margin: -55px 5px;
+    }
     
     .botao #imgMoeda {
         width: 55px;
@@ -247,6 +262,11 @@
     .botao #imgComprimento {
         width: 70px;
         margin: -65px 2px;
+    }
+
+    #audio > svg {
+        width: 45px;
+        margin: -55px 5px;
     }
 
         /*  Estilo do PopUp da Calculadora */
@@ -289,5 +309,70 @@
     .social > img {
         width: 50px;
     }
+
+    .nav-list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        letter-spacing: 3px;
+        margin-left: 32px;
+        top: 13vh;
+        right: 0;
+        left: 206px;
+        width: 80vw;
+        height: 88vh;
+        background-color: rgba(0, 0, 0, 0.856);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        box-sizing: border-box;
+        
+    }
+    .nav-list a {
+        border: none;
+        margin-left: 0;
+    }
+    
+    .nav-list.active {
+        transform: translateX(0);
+    }
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .mobile-menu div{
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+        transition: 0.3s;
+    }
+    
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line3 {
+        opacity: 0;
+    }
+    
+    .mobile-menu.active .line2 {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+    
+    
 
 }

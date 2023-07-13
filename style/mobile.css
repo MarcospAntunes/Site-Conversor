@@ -8,6 +8,11 @@
         width: 100vw;
         overflow-x: hidden;
     }
+
+    body::-webkit-scrollbar {
+        width: 0px;
+      }
+
     /* Estilo do Cabeçalho */
     header {
         height: 100px;
@@ -231,6 +236,11 @@
 }
 
 @media screen and (min-width: 501px) and (max-width: 1200px) {
+    
+    body::-webkit-scrollbar {
+        width: 0px;
+      }
+
     #menu {
         width: 40vw;
         height: 45vh;
@@ -391,7 +401,4 @@
     .mobile-menu.active .line2 {
         transform: rotate(45deg) translate(1px, -1px);
     }
-    
-    
-
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/mobile.css">
+    <link rel="stylesheet" href="../style/TelaEmPe.css">
+    <title>Fast Converter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-list">
+                <a href="../index.html">Home</a>
+                <a href="peso.html">Conversor de Peso</a>
+                <a href="#">Converter Temperaturas</a>
+                <a href="moeda.html">Conversor de Moedas</a>
+                <a href="comprimento.html">Conversor de Medidas de Comprimento</a>
+                <a href="audio.html">Converter audio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Conversor">
+            <label for="numero">Temperatura a ser convertida:</label>
+            <input type="number" name="numero" id="numero">
+            <label for="DeTemp">Dê:</label>
+            <select name="DeTemp" id="DeTemp">
+                <option value="">Escolha a escala de temperatura a ser convertida</option>
+                <option value="C" class="opcao">Celsius (°C)</option>
+                <option value="K" class="opcao">Kelvin (K)</option>
+                <option value="F" class="opcao">fahrenheit (°F)</option>
+            </select>
+
+            <label for="ParaTemp">Para:</label>
+            <select name="ParaTemp" id="ParaTemp">
+                <option value="">Escolha a escala desejada</option>
+                <option value="C" class="opcao">Celsius (°C)</option>
+                <option value="K" class="opcao">Kelvin (K)</option>
+                <option value="F" class="opcao">fahrenheit (°F)</option>
+            </select>
+            <div class="resultado" id="resultado"></div>
+            <button id="converter">Converter</button>
+
+            <article id="curiosidadeTemp" class="artigo"></article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div>
+            <button class="social" id="linkedin"><img src="../imagens/icones/linkedinicon.png" alt="LinkEdin"></button>
+            <button class="social"><img src="../imagens/icones/githubicon.png" alt="GitHub" id="github"></button>
+        </div>
+        <h2>by Marcos Antunes</h2>
+    </footer>
+    <script src="../script/mobile-navbar.js"></script>
+    <script src="../script/ConversorDeTemp.js"></script>
+</body>
+</html>

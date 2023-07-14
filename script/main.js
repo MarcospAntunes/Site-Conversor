@@ -38,8 +38,8 @@ botao.forEach(button => {
       window.location.href = "html/comprimento.html";
     } else if (button.id === 'audio') {
       window.location.href = 'html/audio.html'
-    } else if (button.id === 'documentos') {
-      window.location.href = 'html/documento.html'
+    } else if (button.id === 'temperatura') {
+      window.location.href = 'html/temperatura.html'
     }
   });
 });

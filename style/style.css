@@ -57,6 +57,8 @@ body {
     max-width: 400px;
     max-height: 160px;
     text-align: center;
+    padding-left: 10px;
+    margin-top: -10px;
 }
 
 .botao {
@@ -88,15 +90,10 @@ body {
     margin: -70px 2px;
 }
 
-#documentos > svg {
+#imgTemperatura {
     position: absolute;
-    fill: white;
-    width: 50px;
-    margin: -60px 10px;
-}
-
-.svgpath {
-    fill: transparent;
+    width: 150px;
+    margin: -130px -30px;
 }
 
 .botao #imgMoeda {

@@ -19,37 +19,34 @@
             <div class="nav-list">
                 <a href="../index.html">Home</a>
                 <a href="peso.html">Conversor de Peso</a>
-                <a href="#">Converter Temperaturas</a>
+                <a href="temperatura.html">Converter Temperaturas</a>
                 <a href="moeda.html">Conversor de Moedas</a>
                 <a href="comprimento.html">Conversor de Medidas de Comprimento</a>
-                <a href="velocidade.html">Converter Velocidade</a>
+                <a href="#">Converter Velocidade</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section id="Conversor">
-            <label for="numero">Temperatura a ser convertida:</label>
+            <label for="numero">Velocidade a ser convertida:</label>
             <input type="number" name="numero" id="numero">
-            <label for="DeTemp">Dê:</label>
-            <select name="DeTemp" id="DeTemp">
-                <option value="">Escolha a escala de temperatura a ser convertida</option>
-                <option value="C" class="opcao">Celsius (°C)</option>
-                <option value="K" class="opcao">Kelvin (K)</option>
-                <option value="F" class="opcao">fahrenheit (°F)</option>
+            <label for="DeVelo">Dê:</label>
+            <select name="DeVelo" id="DeVelo">
+                <option value="">Escolha a escala de velocidade a ser convertida</option>
+                <option value="ms" class="opcao">Metro por segundo(m/s)</option>
+                <option value="kmh" class="opcao">Quilômetro por hora(km/h)</option>
             </select>
 
-            <label for="ParaTemp">Para:</label>
-            <select name="ParaTemp" id="ParaTemp">
-                <option value="">Escolha a escala desejada</option>
-                <option value="C" class="opcao">Celsius (°C)</option>
-                <option value="K" class="opcao">Kelvin (K)</option>
-                <option value="F" class="opcao">fahrenheit (°F)</option>
+            <label for="ParaVelo">Para:</label>
+            <select name="ParaVelo" id="ParaVelo">
+                <option value="">Escolha a escala de velocidade de destino</option>
+                <option value="ms" class="opcao">Metro por segundo(m/s)</option>
+                <option value="kmh" class="opcao">Quilômetro por hora(km/h)</option>
             </select>
             <div class="resultado" id="resultado"></div>
             <button id="converter">Converter</button>
-
-            <article id="curiosidadeTemp" class="artigo"></article>
+            <article id="curiosidadeVelo" class="artigo"></article>
         </section>
         
     </main>
@@ -62,6 +59,6 @@
         <h2>by Marcos Antunes</h2>
     </footer>
     <script src="../script/mobile-navbar.js"></script>
-    <script src="../script/ConversorDeTemp.js"></script>
+    <script src="../script/ConversorDeVelo.js"></script>
 </body>
 </html>

@@ -36,8 +36,8 @@ botao.forEach(button => {
       window.location.href = "html/moeda.html";
     } else if (button.id === 'comprimento') {
       window.location.href = "html/comprimento.html";
-    } else if (button.id === 'audio') {
-      window.location.href = 'html/audio.html'
+    } else if (button.id === 'velocidade') {
+      window.location.href = 'html/velocidade.html'
     } else if (button.id === 'temperatura') {
       window.location.href = 'html/temperatura.html'
     }

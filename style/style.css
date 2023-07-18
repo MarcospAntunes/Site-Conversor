@@ -64,7 +64,7 @@ body {
 .botao {
     margin: auto;
     width: 140px;
-    padding: 90px 20px 45px 20px; 
+    padding: 90px 20px 20px 20px; 
     border: none;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -80,39 +80,38 @@ body {
 
 .botao #imgCalculadora {
     position: absolute;
-    width: 60px;
-    margin: -60px 15px;
+    width: 50px;
+    margin: -60px 20px;
 }
 
 .botao #imgPeso {
     position: absolute;
-    width: 70px;
-    margin: -70px 2px;
+    width: 50px;
+    margin: -55px 13px;
 }
 
 #imgTemperatura {
     position: absolute;
-    width: 150px;
-    margin: -130px -30px;
+    width: 50px;
+    margin: -55px 15px;
 }
 
 .botao #imgMoeda {
     position: absolute;
     width: 50px;
-    margin: -60px 15px;
+    margin: -55px 15px;
 }
 
 .botao #imgComprimento {
     position: absolute;
-    width: 70px;
-    margin: -70px 15px;
+    width: 50px;
+    margin: -50px 25px;
 }
 
-#audio > svg { 
+.botao #imgVelocidade { 
     position: absolute;
-    fill: white;
     width: 50px;
-    margin: -60px 10px;
+    margin: -50px 15px;
 }
 
     /*  Estilo do PopUp da Calculadora */
@@ -201,8 +200,8 @@ footer > div {
     background: transparent;
     color: white;
     border: none;
-    border-radius: 20px;
-    width: 70px;
+    border-radius: 50px;
+    width: 60px;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -212,7 +211,35 @@ footer > div {
 }
 
 .social > img {
-    width: 70px;
+    width: 60px;
+}
+
+.creditos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#feitoPor {
+    padding: 15px 0px 15px 0px;
+}
+
+#creditsButton {
+    background: transparent;
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 15px 50px 15px 50px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#creditsButton:hover {
+    padding: 15px 55px 15px 55px;
+    transition: 0.3s;
+    background-color: rgba(211, 211, 211, 0.219);
 }
 
 /* Estilos da Página do Conversor de Peso */

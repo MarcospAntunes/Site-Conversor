@@ -49,4 +49,8 @@ botao.addEventListener('click', function converter() {
     if (unidadeOrigem === unidadeDestino) {
         textResultado.innerHTML = numero + ' ' + unidadeDestino
     }
+
+    if (unidadeDestino === '' && unidadeOrigem === ''){
+        textResultado.innerHTML = 'Digite um valor!'
+     }
 })

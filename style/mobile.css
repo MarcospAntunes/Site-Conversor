@@ -45,35 +45,36 @@
     }
 
     .botao #imgCalculadora {
-        width: 60px;
-        margin: -60px 2px;
+        width: 50px;
+        margin: -60px 8px;
     }
     
     .botao #imgPeso {
-        width: 60px;
-        margin: -60px -2px;
+        width: 50px;
+        margin: -60px 5px;
     }
 
     .botao #imgTemperatura {
         position: absolute;
-        width: 100px;
-        margin: -90px -10px;
+        width: 50px;
+        margin: -60px 5px;
     }
     
     .botao #imgMoeda {
-        width: 45px;
-        margin: -50px 5px;
+        width: 50px;
+        margin: -60px 5px;
     }
     
     .botao #imgComprimento {
-        width: 60px;
-        margin: -55px 2px;
+        position: absolute;
+        width: 50px;
+        margin: -60px 5px;
     }
 
-    #audio > svg {
-        width: 45px;
-        margin: -55px 5px;
+    .botao #imgVelocidade { 
+        margin: -60px 5px;
     }
+
 
         /*  Estilo do PopUp da Calculadora */
 
@@ -108,7 +109,7 @@
     }
     
     .social {
-        width: 60px;
+        width: 50px;
         margin-right: 10px;
     }
 
@@ -266,19 +267,19 @@
     }
 
     .botao #imgCalculadora {
-        width: 70px;
-        margin: -70px -2px;
+        width: 55px;
+        margin: -60px 8px;
     }
     
     .botao #imgPeso {
-        width: 70px;
-        margin: -70px -5px;
+        width: 50px;
+        margin: -55px 5px;
     }
 
     .botao #imgTemperatura {
         position: absolute;
-        width: 130px;
-        margin: -115px -28px;
+        width: 55px;
+        margin: -60px 5px;
     }
     
     .botao #imgMoeda {
@@ -287,21 +288,16 @@
     }
     
     .botao #imgComprimento {
-        width: 70px;
-        margin: -65px 2px;
-    }
-
-    #audio {
-        padding-left: 30px;
-    }
-
-    #audio > svg {
-        width: 45px;
+        position: absolute;
+        width: 55px;
         margin: -55px 5px;
     }
 
-    
+    .botao #imgVelocidade { 
+        margin: -55px 10px;
+    }
 
+    
         /*  Estilo do PopUp da Calculadora */
 
     .popup {
@@ -332,7 +328,7 @@
     }
 
     footer > div {
-        height: 5vh;
+        height: 6vh;
     }
     
     .social {
@@ -341,7 +337,7 @@
     }
 
     .social > img {
-        width: 50px;
+        width: 60px;
     }
 
     .nav-list {

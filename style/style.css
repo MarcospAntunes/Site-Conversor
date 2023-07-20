@@ -154,6 +154,39 @@ body {
     font-size: 28px;
 }
 
+/* Popup dos créditos */
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, .5);
+}
+dialog {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+}
+ dialog > p > a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+ }
+
+#fechar {
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
     /* Estilo da calculadora */ 
 .calculadora {
     background-color: rgba(0, 0, 0, 0.8);
@@ -185,7 +218,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 12px;
-    padding-top: 25px;
+    padding-top: 12px;
 }
 
 footer > div {

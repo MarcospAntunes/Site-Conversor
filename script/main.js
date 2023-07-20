@@ -1,5 +1,8 @@
 const popup = document.querySelector('.popup-wrapper');
-const botao = document.querySelectorAll('.botao')
+const botao = document.querySelectorAll('.botao');
+const creditos = document.querySelector('#creditsButton');
+const modal = document.querySelector('dialog');
+const fecharModal = document.querySelector('#fechar');
 
 
 //Abre o Popup da calculadora 
@@ -54,4 +57,15 @@ linkedin.addEventListener("click", () => {
 
 github.addEventListener("click", () => {
     window.open("https://github.com/MarcospAntunes")
+})
+
+//Abrir popup dos Créditos
+creditos.addEventListener("click", () => {
+    modal.showModal()
+    botao.forEach(button => button.style.display = 'none');
+})
+
+fecharModal.addEventListener("click", () => {
+  modal.close()
+  botao.forEach(button => button.style.display = 'block');
 })

@@ -51,6 +51,10 @@ header > h1 {
 
 /* Estilo do corpo da página */
 
+#bodyIndex {
+    overflow: hidden !important;
+}
+
 body {
     width: 100vw;
     height: 100vh;

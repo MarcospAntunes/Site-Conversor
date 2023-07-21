@@ -19,12 +19,34 @@ header {
 
 header > h1 {
     padding-top: 50px;
+    padding-bottom: 50px;
     font-size: 48px;
     color: white;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
     font-weight: bolder;
 
+}
+
+#formulario {
+    background: transparent;
+    border: 1px solid #23295d;
+    border-radius: 15px;
+    width: 125px;
+    padding: 15px 50px 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#formulario:hover {
+    padding: 15px 55px 15px 55px;
+    transition: 0.3s;
+    background-color: rgba(211, 211, 211, 0.219);
 }
 
 /* Estilo do corpo da página */

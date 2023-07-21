@@ -21,7 +21,28 @@
     header > h1 {
         font-size: 34px;
         text-align: center;
-    
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    #formulario {
+        background: transparent;
+        border: 1px solid rgb(109, 48, 133);
+        border-radius: 15px;
+        padding: 10px 25px 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 0.2px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    #formulario:hover {
+        padding: 10px 30px 10px 30px;
+        transition: 0.3s;
+        background-color: rgba(211, 211, 211, 0.219);
     }
     /* Estilos da Página Inicial, do menu e dos botões */
     #menu {
@@ -115,6 +136,24 @@
 
     .social > img {
         width: 50px;
+    }
+
+    #creditsButton {
+        background: transparent;
+        border: 1px solid rgb(109, 48, 133);
+        border-radius: 15px;
+        margin-left: 20px;
+        padding: 10px 25px 10px 25px;
+        text-align: center;
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    #creditsButton:hover {
+        padding: 10px 30px 10px 30px;
+        transition: 0.3s;
+        background-color: rgba(211, 211, 211, 0.219);
     }
 
 

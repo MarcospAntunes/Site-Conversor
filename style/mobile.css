@@ -138,6 +138,7 @@
 
     /*Menu de navegação*/
     nav {
+        position: fixed;
         justify-content: space-around;
         background-color: rgba(0, 0, 0, 0.856);
         border-radius: 0;

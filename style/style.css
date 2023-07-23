@@ -104,6 +104,12 @@ body {
     background: linear-gradient(to right, #340b507e, #0b265777);
 }
 
+.botao #imgTempo {
+    position: absolute;
+    width: 50px;
+    margin: -55px 13px;
+}
+
 .botao #imgPeso {
     position: absolute;
     width: 50px;

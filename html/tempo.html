@@ -58,9 +58,9 @@
             </div>
             <div class="nav-list">
                 <a href="../index.html">Home</a>
-                <a href="tempo.html">Tempo</a>
+                <a href="#">Tempo</a>
                 <a href="peso.html">Conversor de Peso</a>
-                <a href="#">Converter Temperaturas</a>
+                <a href="temperatura.html">Converter Temperaturas</a>
                 <a href="moeda.html">Conversor de Moedas</a>
                 <a href="comprimento.html">Conversor de Medidas de Comprimento</a>
                 <a href="velocidade.html">Converter Velocidade</a>
@@ -71,27 +71,39 @@
 
     <main>
         <section id="Conversor">
-            <label for="numero">Temperatura a ser convertida:</label>
+            <label for="numero">Unidade de tempo a ser convertida:</label>
             <input type="number" name="numero" id="numero">
-            <label for="DeTemp">Dê:</label>
-            <select name="DeTemp" id="DeTemp">
-                <option value="">Escolha a escala de temperatura a ser convertida</option>
-                <option value="C" class="opcao">Celsius (°C)</option>
-                <option value="K" class="opcao">Kelvin (K)</option>
-                <option value="F" class="opcao">fahrenheit (°F)</option>
+            <label for="DeTempo">Dê:</label>
+            <select name="DeTempo" id="DeTempo">
+                <option value="">Escolha a escala de tempo a ser convertida</option>
+                <option value="seculo" class="opcao">Seculo</option>
+                <option value="ano" class="opcao">Ano</option>
+                <option value="mes" class="opcao">Mês</option>
+                <option value="semana" class="opcao">Semana</option>
+                <option value="dia" class="opcao">Dia</option>
+                <option value="hora" class="opcao">Hora (h)</option>
+                <option value="minuto" class="opcao">Minuto (min)</option>
+                <option value="segundo" class="opcao">Segundo (s)</option>
+                <option value="milessegundo" class="opcao">Milessegundo (ms)</option>
             </select>
 
-            <label for="ParaTemp">Para:</label>
-            <select name="ParaTemp" id="ParaTemp">
+            <label for="ParaTempo">Para:</label>
+            <select name="ParaTempo" id="ParaTempo">
                 <option value="">Escolha a escala desejada</option>
-                <option value="C" class="opcao">Celsius (°C)</option>
-                <option value="K" class="opcao">Kelvin (K)</option>
-                <option value="F" class="opcao">fahrenheit (°F)</option>
+                <option value="seculo" class="opcao">Seculo</option>
+                <option value="ano" class="opcao">Ano</option>
+                <option value="mes" class="opcao">Mês</option>
+                <option value="semana" class="opcao">Semana</option>
+                <option value="dia" class="opcao">Dia</option>
+                <option value="hora" class="opcao">Hora (h)</option>
+                <option value="minuto" class="opcao">Minuto (min)</option>
+                <option value="segundo" class="opcao">Segundo (s)</option>
+                <option value="milessegundo" class="opcao">Milessegundo (ms)</option>
             </select>
             <div class="resultado" id="resultado"></div>
             <button id="converter">Converter</button>
 
-            <article id="curiosidadeTemp" class="artigo"></article>
+            <article id="curiosidadeTempo" class="artigo"></article>
         </section>
         
     </main>
@@ -104,7 +116,7 @@
         <h2>by Marcos Antunes</h2>
     </footer>
     <script src="../script/mobile-navbar.js"></script>
-    <script src="../script/ConversorDeTemp.js"></script>
+    <script src="../script/ConversorDeTempo.js"></script>
     <script src="../script/calculadora.js"></script>
 </body>
 </html>

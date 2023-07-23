@@ -16,6 +16,8 @@ botao.forEach(button => {
       window.location.href = 'html/velocidade.html'
     } else if (button.id === 'temperatura') {
       window.location.href = 'html/temperatura.html'
+    } else if (button.id === 'tempo') { 
+      window.location.href = 'html/tempo.html' 
     }
   });
 });

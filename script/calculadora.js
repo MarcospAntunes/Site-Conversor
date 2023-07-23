@@ -1,3 +1,19 @@
+//Abrir Popup da calculadora
+const calculadora = document.querySelector('#Calculadora');
+const modalCalculadora = document.querySelector('#modalCalculadora');
+const fecharCalculadora = document.querySelector('#fecharCalculadora');
+
+calculadora.addEventListener('click', () => {
+    modalCalculadora.showModal()
+  });
+  
+  fecharCalculadora.addEventListener('click', () => {
+    modalCalculadora.close();
+  });
+
+
+//Funcionalidade da calculadora 
+
 var resultadoElement = document.querySelector('#resultadoCalc');
 
 function insert(num) {

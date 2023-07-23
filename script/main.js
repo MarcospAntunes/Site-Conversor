@@ -1,39 +1,12 @@
-const popup = document.querySelector('.popup-wrapper');
 const botao = document.querySelectorAll('.botao');
 const creditos = document.querySelector('#creditsButton');
-const modal = document.querySelector('dialog');
-const fecharModal = document.querySelector('#fechar');
-
-
-//Abre o Popup da calculadora 
-const openPopup = () => {
-    popup.style.display = 'block';
-    botao.forEach(button => button.style.display = 'none');
-  };
-
-  
-// Fecha o Popup da calculadora
-const closePopup = () => {
-    popup.style.display = 'none';
-    botao.forEach(button => button.style.display = 'block');
-  };
-
-  popup.addEventListener('click', event => {
-    const classNameOfClickedElement = event.target.classList[0];
-    const classNames = ['popup-close', 'popup-wrapper'];
-    const shouldClosePopup = classNames.includes(classNameOfClickedElement);
-    
-    if (shouldClosePopup) {
-      closePopup();
-    }
-  });
+const modalCredits = document.querySelector('#modalCredits');
+const fecharCredits = document.querySelector('#fecharCredits');
 
 //Navegação dos botões do menu da página principal
 botao.forEach(button => {
   button.addEventListener('click', () => {
-    if (button.id === 'Calculadora') {
-      openPopup();
-    } else if (button.id === 'peso') {
+    if (button.id === 'peso') {
       window.location.href = "html/peso.html";
     } else if (button.id === 'moeda') {
       window.location.href = "html/moeda.html";
@@ -57,15 +30,15 @@ linkedin.addEventListener("click", () => {
 
 github.addEventListener("click", () => {
     window.open("https://github.com/MarcospAntunes")
-})
+});
 
 //Abrir popup dos Créditos
 creditos.addEventListener("click", () => {
-    modal.showModal()
+    modalCredits.showModal()
     botao.forEach(button => button.style.display = 'none');
-})
+});
 
-fecharModal.addEventListener("click", () => {
-  modal.close()
+fecharCredits.addEventListener("click", () => {
+  modalCredits.close()
   botao.forEach(button => button.style.display = 'block');
-})
+});

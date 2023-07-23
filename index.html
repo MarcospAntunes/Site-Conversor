@@ -19,51 +19,7 @@
         <section id="menu">
             <div id="OrganizacaoBotoes">
                 <div>
-                    <button class="botao" id="Calculadora"><img src="imagens/icones/calculadoraicon.png" alt="Calculadora" id="imgCalculadora">Calculadora</button>
-
-                    <div class="popup-wrapper">
-                        <div class="popup">
-                            <div class="popup-close">x</div>
-
-                            <div class="popup-content">
-                                <div class="calculadora">
-                                    <p id="resultadoCalc"></p>
-                                    <table>
-                                        <tr>
-                                            <td><button class="CalcBotao" onclick="clean()">C</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('%')">%</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('/')">/</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('*')">x</button></td>
-                                        </tr>
-                                        <tr>
-                                        <tr>
-                                            <td><button class="CalcBotao" onclick="insert('7')">7</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('8')">8</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('9')">9</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('-')">-</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="CalcBotao" onclick="insert('4')">4</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('5')">5</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('6')">6</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('+')">+</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="CalcBotao" onclick="insert('1')">1</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('2')">2</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('3')">3</button></td>
-                                            <td rowspan="2"><button class="CalcBotao" style="height: 106px;" onclick="calculate()">=</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="CalcBotao" onclick="insert('0')">0</button></td>
-                                            <td><button class="CalcBotao" onclick="insert('.')">.</button></td>
-                                            <td><button class="CalcBotao" onclick="back()">⌫</button></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="botao" id="tempo"><img src="imagens/icones/tempoicon.png" alt="tempo" id="imgTempo">Tempo</button>
 
                     <button class="botao" id="peso"><img src="imagens/icones/pesoicon.png" alt="Peso" id="imgPeso">Conversor de Peso</button>
 
@@ -92,8 +48,8 @@
             <h2 id="feitoPor">by Marcos Antunes</h2>
 
             <h2><button id="creditsButton">Créditos</button></h2>
-            <dialog>
-                <button id="fechar">X</button>
+            <dialog id="modalCredits">
+                <button class="fechar" id="fecharCredits">X</button>
                 <h1>Créditos</h1>
                 <h3>Créditos aos criadores dos ícones usados nesta página</h3>
                 <p><a href="https://www.flaticon.com/free-icons/currency" title="currency icons">Currency icons created by Pixel perfect - Flaticon</a>🔗</p>

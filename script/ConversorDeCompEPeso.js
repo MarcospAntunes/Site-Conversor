@@ -27,6 +27,8 @@ botao.addEventListener('click', function converter() {
         decigrama: 10000,
         centigrama: 100000,
         miligrama: 1000000,
+        onca: 35.274,
+        libra: 2.205,
 
         quilometro: 1,
         hectometro: 10,
@@ -34,7 +36,11 @@ botao.addEventListener('click', function converter() {
         metro: 1000,
         decimetro: 10000,
         centimetro: 100000,
-        milimetro: 1000000
+        milimetro: 1000000,
+        milha: 0.621371,
+        jarda: 1094,
+        pes: 3281,
+        polegada: 39370
     };
 
     //Realiza a conversão de unidades
@@ -42,25 +48,32 @@ botao.addEventListener('click', function converter() {
     if (numero && unidades[unidadeOrigem] && unidades[unidadeDestino]) {
         const multiplicador = unidades[unidadeDestino] / unidades[unidadeOrigem];
         const resultado = numero * multiplicador;
+        const resultadoConvertida = resultado.toFixed(2)
         
-        if(unidadeDestino === 'quilograma'){ textResultado.textContent = resultado + "kg" };
-        if(unidadeDestino === 'hectograma'){ textResultado.textContent = resultado + "hg" };
-        if(unidadeDestino === 'decagrama'){ textResultado.textContent = resultado + "dag" };
-        if(unidadeDestino === 'grama'){ textResultado.textContent = resultado + "g" };
-        if(unidadeDestino === 'decigrama'){ textResultado.textContent = resultado + "dg" };
-        if(unidadeDestino === 'centigrama'){ textResultado.textContent = resultado + "cg" };
-        if(unidadeDestino === 'miligrama'){ textResultado.textContent = resultado + "mg" };
+        if(unidadeDestino === 'quilograma'){ textResultado.textContent = resultadoConvertida + " kg" };
+        if(unidadeDestino === 'hectograma'){ textResultado.textContent = resultadoConvertida + " hg" };
+        if(unidadeDestino === 'decagrama'){ textResultado.textContent = resultadoConvertida + " dag" };
+        if(unidadeDestino === 'grama'){ textResultado.textContent = resultadoConvertida + " g" };
+        if(unidadeDestino === 'decigrama'){ textResultado.textContent = resultadoConvertida + " dg" };
+        if(unidadeDestino === 'centigrama'){ textResultado.textContent = resultadoConvertida + " cg" };
+        if(unidadeDestino === 'miligrama'){ textResultado.textContent = resultadoConvertida + " mg" };
+        if(unidadeDestino === 'onca'){ textResultado.textContent = resultadoConvertida + " oz" };
+        if(unidadeDestino === 'libra'){ textResultado.textContent = resultadoConvertida + " lb" };
 
 
-        if(unidadeDestino === 'quilometro'){ textResultado.textContent = resultado + "km" };
-        if(unidadeDestino === 'hectometro'){ textResultado.textContent = resultado + "hm" };
-        if(unidadeDestino === 'decametro'){ textResultado.textContent = resultado + "dam" };
-        if(unidadeDestino === 'metro'){ textResultado.textContent = resultado + "m" };
-        if(unidadeDestino === 'decimetro'){ textResultado.textContent = resultado + "dm" };
-        if(unidadeDestino === 'centimetro'){ textResultado.textContent = resultado + "cm" };
-        if(unidadeDestino === 'milimetro'){ textResultado.textContent = resultado + "mm" };
+        if(unidadeDestino === 'quilometro'){ textResultado.textContent = resultadoConvertida + " km" };
+        if(unidadeDestino === 'hectometro'){ textResultado.textContent = resultadoConvertida + " hm" };
+        if(unidadeDestino === 'decametro'){ textResultado.textContent = resultadoConvertida + " dam" };
+        if(unidadeDestino === 'metro'){ textResultado.textContent = resultadoConvertida + " m" };
+        if(unidadeDestino === 'decimetro'){ textResultado.textContent = resultadoConvertida + " dm" };
+        if(unidadeDestino === 'centimetro'){ textResultado.textContent = resultadoConvertida + " cm" };
+        if(unidadeDestino === 'milimetro'){ textResultado.textContent = resultadoConvertida + " mm" };
+        if(unidadeDestino === 'milha'){ textResultado.textContent = resultadoConvertida + " mile" };
+        if(unidadeDestino === 'jarda'){ textResultado.textContent = resultadoConvertida + " yard" };
+        if(unidadeDestino === 'pes'){ textResultado.textContent = resultadoConvertida + " ft" };
+        if(unidadeDestino === 'polegada'){ textResultado.textContent = resultadoConvertida + " in" };
         
-        if (unidadeDestino === 'quilometro' || unidadeDestino === 'hectometro' || unidadeDestino === 'decametro' || unidadeDestino === 'metro' || unidadeDestino === 'decimetro' || unidadeDestino === 'centimetro' || unidadeDestino === 'milimetro') {
+        if (unidadeDestino === 'quilometro' || unidadeDestino === 'hectometro' || unidadeDestino === 'decametro' || unidadeDestino === 'metro' || unidadeDestino === 'decimetro' || unidadeDestino === 'centimetro' || unidadeDestino === 'milimetro' || unidadeDestino === 'milha' || unidadeDestino === 'jarda' || unidadeDestino === 'pes' || unidadeDestino === 'polegada') {
 
             curiosidadeComp.innerHTML = `
         
@@ -82,7 +95,7 @@ botao.addEventListener('click', function converter() {
             
             `;
         
-        } else if (unidadeDestino === 'quilograma' || unidadeDestino === 'hectograma' || unidadeDestino === 'decagrama' || unidadeDestino === 'grama' || unidadeDestino === 'decigrama' || unidadeDestino === 'centigrama' || unidadeDestino === 'miligrama') {
+        } else if (unidadeDestino === 'quilograma' || unidadeDestino === 'hectograma' || unidadeDestino === 'decagrama' || unidadeDestino === 'grama' || unidadeDestino === 'decigrama' || unidadeDestino === 'centigrama' || unidadeDestino === 'miligrama' || unidadeDestino === 'onca' || unidadeDestino === 'libra') {
 
             curiosidadePeso.innerHTML = `
             <h3>Medidas de Massa</h3>

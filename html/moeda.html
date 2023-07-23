@@ -11,6 +11,46 @@
 <body>
     <header>
         <nav>
+            <button class="botaoCalculadora" id="Calculadora"><img src="../imagens/icones/calculadoraicon.png" alt="Calculadora" id="imgCalculadora"></button>
+            <dialog id="modalCalculadora">
+                <button class="fechar" id="fecharCalculadora">X</button>
+                <div class="calculadora">
+                    <p id="resultadoCalc"></p>
+                    <table>
+                        <tr>
+                            <td><button class="CalcBotao" onclick="clean()">C</button></td>
+                            <td><button class="CalcBotao" onclick="insert('%')">%</button></td>
+                            <td><button class="CalcBotao" onclick="insert('/')">/</button></td>
+                            <td><button class="CalcBotao" onclick="insert('*')">x</button></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td><button class="CalcBotao" onclick="insert('7')">7</button></td>
+                            <td><button class="CalcBotao" onclick="insert('8')">8</button></td>
+                            <td><button class="CalcBotao" onclick="insert('9')">9</button></td>
+                            <td><button class="CalcBotao" onclick="insert('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="CalcBotao" onclick="insert('4')">4</button></td>
+                            <td><button class="CalcBotao" onclick="insert('5')">5</button></td>
+                            <td><button class="CalcBotao" onclick="insert('6')">6</button></td>
+                            <td><button class="CalcBotao" onclick="insert('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="CalcBotao" onclick="insert('1')">1</button></td>
+                            <td><button class="CalcBotao" onclick="insert('2')">2</button></td>
+                            <td><button class="CalcBotao" onclick="insert('3')">3</button></td>
+                            <td rowspan="2"><button class="CalcBotao" style="height: 106px;" onclick="calculate()">=</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="CalcBotao" onclick="insert('0')">0</button></td>
+                            <td><button class="CalcBotao" onclick="insert('.')">.</button></td>
+                            <td><button class="CalcBotao" onclick="back()">⌫</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </dialog>
+            
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -80,5 +120,6 @@
     </footer>
     <script src="../script/mobile-navbar.js"></script>
     <script src="../script/conversorDeMoeda.js"></script>
+    <script src="../script/calculadora.js"></script>
 </body>
 </html>

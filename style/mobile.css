@@ -96,29 +96,6 @@
         margin: -60px 5px;
     }
 
-
-        /*  Estilo do PopUp da Calculadora */
-
-    .popup {
-    width: 80%;
-    }
-
-    /* Estilo da calculadora */ 
-    .calculadora {
-    padding: 10px;
-    }
-
-    #resultado {
-    width: 200px;
-    height: 20px;
-    font-size: 14px;   
-    }
-
-    .CalcBotao {
-    margin: 1px;
-    font-size: 16px;
-    }
-
 /* Rodape */ 
 
     footer {
@@ -157,7 +134,7 @@
     }
 
 
-    /* Estilos da Página do Conversor de Peso */
+    /* Estilos das Páginas dos Conversores */
 
     /*Menu de navegação*/
     nav {
@@ -168,6 +145,27 @@
         font-size: 12px;
         text-align: center;
     }
+    /* Estilo da calculadora */
+
+    .botaoCalculadora {
+    width: 35px;
+    height: 35px;
+    }
+    .botaoCalculadora #imgCalculadora {
+        width: 35px;
+    }
+    
+    #resultado {
+    width: 200px;
+    height: 20px;
+    font-size: 14px;   
+    }
+    
+    .CalcBotao {
+    margin: 1px;
+    font-size: 16px;
+    }
+
     .nav-list {
         position: fixed;
         display: flex;
@@ -276,6 +274,21 @@
         text-align: center;
         line-height: 3em;
     }
+
+    dialog {
+        max-width: 250px;
+        margin: 10% auto;
+        padding: 20px;
+        background: white;
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+    }
+     dialog > p > a {
+        text-decoration: none;
+        color: black;
+        font-size: 11px;
+     }
 }
 
 @media screen and (min-width: 501px) and (max-width: 1200px) {
@@ -305,7 +318,7 @@
         font-size: 12px;
     }
 
-    .botao #imgCalculadora {
+    .botao #imgTempo {
         width: 55px;
         margin: -60px 8px;
     }
@@ -336,29 +349,6 @@
         margin: -55px 10px;
     }
 
-    
-        /*  Estilo do PopUp da Calculadora */
-
-    .popup {
-    width: 80%;
-    }
-
-    /* Estilo da calculadora */ 
-    .calculadora {
-    padding: 10px;
-    }
-
-    #resultado {
-    width: 200px;
-    height: 28px;
-    font-size: 12px;   
-    }
-
-    .CalcBotao {
-    margin: 1px;
-    font-size: 16px;
-    }
-
 /* Rodape */ 
 
     footer {
@@ -380,6 +370,27 @@
         width: 60px;
     }
 
+    nav {
+        justify-content: space-between;
+    }
+
+     /* Estilo da calculadora */ 
+
+     .botaoCalculadora {
+        margin-left: 20px;
+    }
+
+    #resultado {
+    width: 200px;
+    height: 28px;
+    font-size: 12px;   
+    }
+
+    .CalcBotao {
+    margin: 1px;
+    font-size: 16px;
+    }
+
     .nav-list {
         position: fixed;
         display: flex;
@@ -399,6 +410,7 @@
         box-sizing: border-box;
         
     }
+
     .nav-list a {
         border: none;
         margin-left: 0;
@@ -421,6 +433,7 @@
     .mobile-menu {
         display: block;
         cursor: pointer;
+        margin-right: 20px;
     }
     
     .mobile-menu div{

@@ -13,7 +13,7 @@
 header {
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
-    height: 300px;
+    height: 200px;
     text-align: center;
 }
 
@@ -226,7 +226,7 @@ footer > div {
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
 }
 
 .social {
@@ -309,9 +309,8 @@ nav {
 }
 nav a {
     border: 1px solid rgb(109, 48, 133);
-    border-radius: 15px;
-    margin-right: 15px;
-    padding: 15px;
+    border-radius: 10px;
+    padding: 5px;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -319,7 +318,7 @@ nav a {
 }
 
 nav a:hover {
-    padding: 20px;
+    padding: 10px;
     transition: 0.3s;
     background-color: rgba(211, 211, 211, 0.219);
 }

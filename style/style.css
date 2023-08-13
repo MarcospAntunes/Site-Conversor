@@ -18,8 +18,8 @@ header {
 }
 
 header > h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 30px;
     font-size: 48px;
     color: white;
     -webkit-text-stroke-color: black;

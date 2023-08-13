@@ -292,7 +292,7 @@
      }
 }
 
-@media screen and (min-width: 501px) and (max-width: 1200px) {
+@media screen and (min-width: 501px) and (max-width: 1343px) {
     
     body::-webkit-scrollbar {
         width: 0px;
@@ -402,7 +402,7 @@
         margin-left: 32px;
         top: 13vh;
         right: 0;
-        left: 206px;
+        left: 213px;
         width: 80vw;
         height: 88vh;
         background-color: rgba(0, 0, 0, 0.856);

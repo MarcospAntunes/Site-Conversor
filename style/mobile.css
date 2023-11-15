@@ -211,6 +211,7 @@
     /*Corpo da página*/
 
     #Conversor {
+        margin-top: 50px;
         font-size: 14px;
         width: 235px;
     }
@@ -414,4 +415,12 @@
     .mobile-menu.active .line3 { opacity: 0; }
     
     .mobile-menu.active .line2 { transform: rotate(45deg) translate(1px, -1px); }
+}
+
+@media screen and (width: 430px) and (height: 932px) {
+    .nav-list { margin-left: 37px; }
+}
+
+@media screen and (width: 414px) and (height: 896px) {
+    .nav-list { margin-left: 35px; }
 }

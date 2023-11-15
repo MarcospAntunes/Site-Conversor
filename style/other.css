@@ -1,0 +1,12 @@
+@media screen and (height: 966px) {
+    .nav-list {
+        top: 10vh;
+    }
+}
+
+@media screen and (min-width: 1242px) and (max-width: 1343px) {
+    .nav-list {
+        margin-left: 55px;
+    }
+    
+}

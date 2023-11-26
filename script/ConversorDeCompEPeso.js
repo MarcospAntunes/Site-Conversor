@@ -6,10 +6,8 @@ const Paracomprimento = document.querySelector('#Paracomprimento');
 const curiosidadePeso = document.querySelector('#curiosidadePeso');
 const curiosidadeComp = document.querySelector('#curiosidadeComp')
 
-
 Decomprimento.addEventListener('change', converter);
 Paracomprimento.addEventListener('change', converter);
-
 
 //Quando clicar no botão, a função converter será executada
 botao.addEventListener('click', function converter() {

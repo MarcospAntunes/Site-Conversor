@@ -11,7 +11,6 @@ calculadora.addEventListener('click', () => {
     modalCalculadora.close();
   });
 
-
 //Funcionalidade da calculadora 
 
 var resultadoElement = document.querySelector('#resultadoCalc');

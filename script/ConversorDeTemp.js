@@ -5,10 +5,8 @@ const DeTemp = document.querySelector('#DeTemp');
 const ParaTemp = document.querySelector('#ParaTemp');
 const curiosidadeTemp = document.querySelector('#curiosidadeTemp')
 
-
 DeTemp.addEventListener('change', converter);
 ParaTemp.addEventListener('change', converter);
-
 
 //Quando clicar no botão, a função converter será executada
 botao.addEventListener('click', function converter() {

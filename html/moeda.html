@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <link rel="stylesheet" href="../style/tablet.css">
-    <link rel="stylesheet" href="../style/other.css">
-    <title>Fast Converter</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <button class="botaoCalculadora" id="Calculadora"><img src="../imagens/icones/calculadoraicon.png" alt="Calculadora" id="imgCalculadora"></button>
-            <dialog id="modalCalculadora">
-                <button class="fechar" id="fecharCalculadora">X</button>
-                <div class="calculadora">
-                    <p id="resultadoCalc"></p>
-                    <table>
-                        <tr>
-                            <td><button class="CalcBotao" onclick="clean()">C</button></td>
-                            <td><button class="CalcBotao" onclick="insert('%')">%</button></td>
-                            <td><button class="CalcBotao" onclick="insert('/')">/</button></td>
-                            <td><button class="CalcBotao" onclick="insert('*')">x</button></td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td><button class="CalcBotao" onclick="insert('7')">7</button></td>
-                            <td><button class="CalcBotao" onclick="insert('8')">8</button></td>
-                            <td><button class="CalcBotao" onclick="insert('9')">9</button></td>
-                            <td><button class="CalcBotao" onclick="insert('-')">-</button></td>
-                        </tr>
-                        <tr>
-                            <td><button class="CalcBotao" onclick="insert('4')">4</button></td>
-                            <td><button class="CalcBotao" onclick="insert('5')">5</button></td>
-                            <td><button class="CalcBotao" onclick="insert('6')">6</button></td>
-                            <td><button class="CalcBotao" onclick="insert('+')">+</button></td>
-                        </tr>
-                        <tr>
-                            <td><button class="CalcBotao" onclick="insert('1')">1</button></td>
-                            <td><button class="CalcBotao" onclick="insert('2')">2</button></td>
-                            <td><button class="CalcBotao" onclick="insert('3')">3</button></td>
-                            <td rowspan="2"><button class="CalcBotao" style="height: 106px;" onclick="calculate()">=</button></td>
-                        </tr>
-                        <tr>
-                            <td><button class="CalcBotao" onclick="insert('0')">0</button></td>
-                            <td><button class="CalcBotao" onclick="insert('.')">.</button></td>
-                            <td><button class="CalcBotao" onclick="back()">⌫</button></td>
-                        </tr>
-                    </table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/mobile.css">
+        <link rel="stylesheet" href="../style/tablet.css">
+        <link rel="stylesheet" href="../style/other.css">
+        <title>Fast Converter</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="botaoCalculadora" id="Calculadora"><img src="../imagens/icones/calculadoraicon.png" alt="Calculadora" id="imgCalculadora"></button>
+
+                <dialog id="modalCalculadora">
+                    <button class="fechar" id="fecharCalculadora">X</button>
+                    <div class="calculadora">
+                        <p id="resultadoCalc"></p>
+                        <table>
+                            <tr>
+                                <td><button class="CalcBotao" onclick="clean()">C</button></td>
+                                <td><button class="CalcBotao" onclick="insert('%')">%</button></td>
+                                <td><button class="CalcBotao" onclick="insert('/')">/</button></td>
+                                <td><button class="CalcBotao" onclick="insert('*')">x</button></td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><button class="CalcBotao" onclick="insert('7')">7</button></td>
+                                <td><button class="CalcBotao" onclick="insert('8')">8</button></td>
+                                <td><button class="CalcBotao" onclick="insert('9')">9</button></td>
+                                <td><button class="CalcBotao" onclick="insert('-')">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="CalcBotao" onclick="insert('4')">4</button></td>
+                                <td><button class="CalcBotao" onclick="insert('5')">5</button></td>
+                                <td><button class="CalcBotao" onclick="insert('6')">6</button></td>
+                                <td><button class="CalcBotao" onclick="insert('+')">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="CalcBotao" onclick="insert('1')">1</button></td>
+                                <td><button class="CalcBotao" onclick="insert('2')">2</button></td>
+                                <td><button class="CalcBotao" onclick="insert('3')">3</button></td>
+                                <td rowspan="2"><button class="CalcBotao" style="height: 106px;" onclick="calculate()">=</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="CalcBotao" onclick="insert('0')">0</button></td>
+                                <td><button class="CalcBotao" onclick="insert('.')">.</button></td>
+                                <td><button class="CalcBotao" onclick="back()">⌫</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </dialog>
+                
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </dialog>
-            
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+                <div class="nav-list">
+                    <a href="../index.html">Home</a>
+                    <a href="tempo.html">Tempo</a>
+                    <a href="peso.html">Conversor de Peso</a>
+                    <a href="temperatura.html">Converter Temperaturas</a>
+                    <a href="#">Conversor de Moedas</a>
+                    <a href="comprimento.html">Conversor de Medidas de Comprimento</a>
+                    <a href="velocidade.html">Converter Velocidade</a>
+                    <a href="https://docs.google.com/forms/d/1nzkrYEhA0WrOmea3X-8eRZjOWDrp64d9Mzxy_Uo6Qbc/viewform?edit_requested=true" target="_blank">Enviar FeedBack</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="Conversor">
+                <label for="numero">Número a ser convertido:</label>
+                <input type="number" name="numero" id="numero">
+
+                <label for="Decomprimento">Dê:</label>
+                <select name="Decomprimento" id="Decomprimento">
+                    <option value="">Escolha a moeda ser convertida</option>
+                    <option value="USD" class="opcao">Dólar Americano</option>
+                    <option value="AUD" class="opcao">Dólar Australiano</option>
+                    <option value="EUR" class="opcao">Euro</option>
+                    <option value="GBP" class="opcao">Libra esterlina</option>
+                    <option value="JPY" class="opcao">Lene</option>
+                    <option value="CHF" class="opcao">Franco Suíço</option>
+                    <option value="CAD" class="opcao">Dólar Canadense</option>
+                    <option value="CNY" class="opcao">Renminbi</option>
+                    <option value="ARS" class="opcao">Peso Argentino</option>
+                    <option value="TRY" class="opcao">Lira Turca</option>
+                    <option value="BRL" class="opcao">Real</option>
+                </select>
+
+                <label for="Paracomprimento">Para:</label>
+                <select name="Paracomprimento" id="Paracomprimento">
+                    <option value="">Escolha a moeda ser convertida</option>
+                    <option value="USD" class="opcao">Dólar Americano</option>
+                    <option value="AUD" class="opcao">Dólar Australiano</option>
+                    <option value="EUR" class="opcao">Euro</option>
+                    <option value="GBP" class="opcao">Libra esterlina</option>
+                    <option value="JPY" class="opcao">Iene</option>
+                    <option value="CHF" class="opcao">Franco Suíço</option>
+                    <option value="CAD" class="opcao">Dólar Canadense</option>
+                    <option value="CNY" class="opcao">Renminbi</option>
+                    <option value="ARS" class="opcao">Peso Argentino</option>
+                    <option value="TRY" class="opcao">Lira Turca</option>
+                    <option value="BRL" class="opcao">Real</option>
+                </select>
+                <div class="resultado" id="resultado"></div>
+                <button id="converter">Converter</button>
+
+                <article id="curiosidadeMoeda" class="artigo"></article>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <button class="social" id="linkedin"><img src="../imagens/icones/linkedinicon.png" alt="LinkEdin"></button>
+                <button class="social"><img src="../imagens/icones/githubicon.png" alt="GitHub" id="github"></button>
             </div>
-            <div class="nav-list">
-                <a href="../index.html">Home</a>
-                <a href="tempo.html">Tempo</a>
-                <a href="peso.html">Conversor de Peso</a>
-                <a href="temperatura.html">Converter Temperaturas</a>
-                <a href="#">Conversor de Moedas</a>
-                <a href="comprimento.html">Conversor de Medidas de Comprimento</a>
-                <a href="velocidade.html">Converter Velocidade</a>
-                <a href="https://docs.google.com/forms/d/1nzkrYEhA0WrOmea3X-8eRZjOWDrp64d9Mzxy_Uo6Qbc/viewform?edit_requested=true" target="_blank">Enviar FeedBack</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="Conversor">
-            <label for="numero">Número a ser convertido:</label>
-            <input type="number" name="numero" id="numero">
-            <label for="Decomprimento">Dê:</label>
-            <select name="Decomprimento" id="Decomprimento">
-                <option value="">Escolha a moeda ser convertida</option>
-                <option value="USD" class="opcao">Dólar Americano</option>
-                <option value="AUD" class="opcao">Dólar Australiano</option>
-                <option value="EUR" class="opcao">Euro</option>
-                <option value="GBP" class="opcao">Libra esterlina</option>
-                <option value="JPY" class="opcao">Lene</option>
-                <option value="CHF" class="opcao">Franco Suíço</option>
-                <option value="CAD" class="opcao">Dólar Canadense</option>
-                <option value="CNY" class="opcao">Renminbi</option>
-                <option value="ARS" class="opcao">Peso Argentino</option>
-                <option value="TRY" class="opcao">Lira Turca</option>
-                <option value="BRL" class="opcao">Real</option>
-            </select>
-
-            <label for="Paracomprimento">Para:</label>
-            <select name="Paracomprimento" id="Paracomprimento">
-                <option value="">Escolha a moeda ser convertida</option>
-                <option value="USD" class="opcao">Dólar Americano</option>
-                <option value="AUD" class="opcao">Dólar Australiano</option>
-                <option value="EUR" class="opcao">Euro</option>
-                <option value="GBP" class="opcao">Libra esterlina</option>
-                <option value="JPY" class="opcao">Iene</option>
-                <option value="CHF" class="opcao">Franco Suíço</option>
-                <option value="CAD" class="opcao">Dólar Canadense</option>
-                <option value="CNY" class="opcao">Renminbi</option>
-                <option value="ARS" class="opcao">Peso Argentino</option>
-                <option value="TRY" class="opcao">Lira Turca</option>
-                <option value="BRL" class="opcao">Real</option>
-            </select>
-            <div class="resultado" id="resultado"></div>
-            <button id="converter">Converter</button>
-
-            <article id="curiosidadeMoeda" class="artigo"></article>
-        </section>
-        
-    </main>
-
-    <footer>
-        <div>
-            <button class="social" id="linkedin"><img src="../imagens/icones/linkedinicon.png" alt="LinkEdin"></button>
-            <button class="social"><img src="../imagens/icones/githubicon.png" alt="GitHub" id="github"></button>
-        </div>
-        <h2>by Marcos Antunes</h2>
-    </footer>
-    <script src="../script/mobile-navbar.js"></script>
-    <script src="../script/conversorDeMoeda.js"></script>
-    <script src="../script/calculadora.js"></script>
-</body>
+            <h2>by Marcos Antunes</h2>
+        </footer>
+        <script src="../script/mobile-navbar.js"></script>
+        <script src="../script/conversorDeMoeda.js"></script>
+        <script src="../script/calculadora.js"></script>
+    </body>
 </html>

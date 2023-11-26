@@ -25,7 +25,6 @@ header > h1 {
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
     font-weight: bolder;
-
 }
 
 #formulario {
@@ -61,7 +60,6 @@ body {
     background: url("../imagens/fundo.jpg") no-repeat;
     overflow-x: hidden;
 }
-
 
 /* Estilos da Página Inicial, do menu e dos botões */
 #menu {
@@ -334,7 +332,6 @@ nav a:hover {
     color: white;
     font-size: 18px;
     width: 850px;
-    
 }
 
 #conversor, input, select, .opcao {

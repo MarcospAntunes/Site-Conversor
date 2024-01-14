@@ -1,0 +1,428 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../imagens/fundo.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(97, 94, 94, 0.692);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #340b50c0, #0b2657c4);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: none;  /* creates padding around scroll thumb */
+  }
+
+header, main, footer {
+    width: 100vw;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 80px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resultadoCalc {
+    background-color: white;
+    width: 215px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: Calculator, monospace;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+#Calculadora {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Calculadora img {
+    width: 50px;
+    height: 50px;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, .5);
+}
+
+ dialog > p > a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+ }
+
+.fechar {
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.calculadora {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+.CalcBotao {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.CalcBotao:hover {
+    background-color: black;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 42px;
+    height: 2px;
+    background-color: white;
+    animation: menuAnimation 0.1s normal;
+}
+
+.mobile-menu .line1 {
+    animation: menuAnimationLine1Closed 0.3s normal;
+}
+
+.mobile-menu .line2 {
+    animation: menuAnimationLine2Closed 0.3s normal;
+}
+
+.mobile-menu.active .line1 { 
+    transform: rotate(-45deg) translate(-8px, 8px);
+    animation: menuAnimationLine1Oponed 0.3s normal; 
+}
+
+.mobile-menu.active .line3 { opacity: 0; }
+
+.mobile-menu.active .line2 { 
+    transform: rotate(45deg) translate(1px, -1px);
+    animation: menuAnimationLine2Oponed 0.3s normal;
+}
+
+.nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateX(100vw);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    animation: navLinkDesapper 0.3s normal; 
+}
+
+.nav-list.active { 
+    transform: translateX(0);
+    animation: navLinkAppear 0.3s normal; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: rgb(109, 48, 133);
+    transition: 0.3s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#Conversor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    min-height: 200px;
+    
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+
+#Conversor label + input, label + select {
+    margin-bottom: 20px;
+}
+
+#Conversor input, select {
+    width: 275px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+.resultado {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#converter {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#Conversor hr {
+    width: 100%;
+    margin: 5px;
+    border: 1px solid rgb(109, 48, 133);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.fonte {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid rgb(109, 48, 133);
+    border-radius: 15px;
+}
+
+#Conversor a {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.social:hover {
+    background: linear-gradient(to right, #340b507e, #0b265777);
+}
+
+.social img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 780px) {
+    header {
+        height: 90px;
+    }
+    nav {
+        justify-content: center;
+        gap: 50px;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .nav-list {
+        position: inherit;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        transform: none;
+        background-color: transparent;
+        backdrop-filter: unset;
+        animation: none; 
+    }
+
+    .nav-list a {
+        padding: 5px;
+        border: 1px solid rgb(109, 48, 133);
+        border-radius: 15px;
+    }
+
+    #Conversor {
+        width: 700px;
+    }
+}
+
+@keyframes menuAnimationLine1Closed {
+    from {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    to {
+        transform: rotate(0) translate(0);
+    }
+}
+
+@keyframes menuAnimationLine2Closed {
+    from {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+    to {
+        transform: rotate(0) translate(0);
+    }
+}
+
+@keyframes menuAnimationLine1Oponed {
+    from {
+        transform: rotate(0) translate(0);
+    }
+    to {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+}
+
+@keyframes menuAnimationLine2Oponed {
+    from {
+        transform: rotate(0) translate(0);
+    }
+    to {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+}
+
+
+@keyframes navLinkAppear {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkDesapper {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
